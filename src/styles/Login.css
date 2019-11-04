@@ -1,0 +1,26 @@
+.Login {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginForm {
+    height: 16%;
+    width: 40%;
+    padding: 10px;
+}
+
+.button {
+    width: 100%;
+}
+
+.field .label {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+}
