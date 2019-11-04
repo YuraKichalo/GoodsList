@@ -42,4 +42,6 @@ class GoodsItem extends React.Component {
     };
 };
 
+
+
 export default connect(null, {deleteItem})(GoodsItem);
