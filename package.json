@@ -1,8 +1,10 @@
 {
+  "homepage": "https://yurakichalo.github.io/GoodsList",
   "name": "goodslist",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-router-dom": "^5.1.2",
@@ -10,6 +12,9 @@
     "redux-persist": "^6.0.0"
   },
   "scripts": {
+    "rename-index": "node -e \"require('fs').rename('./build/index.html', './build/200.html', (err) => { console.log(err ? err : 'File renamed!') })\"",
+    "predeploy": "npm run build && npm run rename-index",
+    "deploy": "surge --project ./build --domain GoodsList-yurakichalo.surge.sh",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -29,5 +34,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "surge": "^0.21.3"
   }
 }

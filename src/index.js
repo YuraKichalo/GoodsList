@@ -12,7 +12,7 @@ import reducers from './reducers';
 const persistConfig = {
     key: 'root',
     storage,
-    // blacklist: ['images']
+    blacklist: ['form']
 };
 
 const persistReducers = persistReducer(persistConfig, reducers); 
