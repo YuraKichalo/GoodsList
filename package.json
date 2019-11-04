@@ -12,9 +12,8 @@
     "redux-persist": "^6.0.0"
   },
   "scripts": {
-    "rename-index": "node -e \"require('fs').rename('./build/index.html', './build/200.html', (err) => { console.log(err ? err : 'File renamed!') })\"",
-    "predeploy": "npm run build && npm run rename-index",
-    "deploy": "surge --project ./build --domain GoodsList-yurakichalo.surge.sh",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
