@@ -30,7 +30,7 @@ class GoodsList extends React.Component {
         return (
             <div className="GoodsList">
                 <h1>Choose a restaurant!</h1>
-                <div className="ui three doubling link cards">
+                <div className="ui three doubling cards">
                     {this.renderGoods()}
                 </div>
                 <button onClick={this.showPopup} className="ui primary button">Add restaurant</button>

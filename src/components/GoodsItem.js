@@ -18,13 +18,13 @@ class GoodsItem extends React.Component {
 
 
     render() {
-        const {src, alt, description, time} = this.props;              // add LOGIC for CLICK on oneCARD
+        const {src, alt, description, time} = this.props;
         const display = this.state.showDetails ? 'block' : 'none';
 
         return (
             <div className="ui card">
                 <div onClick={this.showDetails} className="image">
-                    <img src={src} alt={alt} />
+                    <img style={{height:"244px"}} src={src} alt={alt} />
                 </div>
                 <h4 className="header">{alt}</h4>
                 <div style={{display:display}} className="content">
